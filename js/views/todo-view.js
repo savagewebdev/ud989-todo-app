@@ -16,7 +16,7 @@ var app = app || {};
 		template: _.template($('#item-template').html()),
 
 		// The DOM events specific to an item.
-		events: {
+		events: { // Be a detective. Note the event/listeners in the first column, the DOM/CSS element in the second, and the events in the third.
 			'click .toggle': 'toggleCompleted',
 			'dblclick label': 'edit',
 			'click .destroy': 'clear',
